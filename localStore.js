@@ -46,7 +46,3 @@ const setAge = () => {
     // localStorage.setItem('age', 33);
     window.localStorage.setItem('age', 33);
 }
-
-//36_5-3 A Simple Shopping Cart To Add Product And Quantity
-
-//start from this lec
