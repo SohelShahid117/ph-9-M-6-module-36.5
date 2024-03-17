@@ -1,5 +1,6 @@
 
 //36_5-3 A Simple Shopping Cart To Add Product And Quantity
+// 36_5-4 (Advanced) Local Storage Interactions For A Shopping Cart
 
 const addToCart = () => {
     // alert('hi')
@@ -52,4 +53,12 @@ const displayProductFromLocalStorage = () => {
     const savedItem = getStoredShoppingItem();
     console.log(savedItem)
 
+    for (everyItm in savedItem) {
+        const quantity = savedItem[everyItm]
+        console.log(everyItm, quantity)
+        displayProduct(everyItm, quantity)
+    }
 }
+
+
+displayProductFromLocalStorage()
